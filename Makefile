@@ -20,7 +20,8 @@ install:
 	ln -s /usr/share/man/man3/ifstats.3.gz /usr/share/man/man3/releaseStats.3.gz
 
 clean:
-	rm *.o
-	rm ifstatstest
+	-rm *.o
+	-rm *.a
+	-rm ifstatstest
 
 .PHONY : test clean
