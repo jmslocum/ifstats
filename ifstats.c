@@ -31,7 +31,11 @@ OR OTHER DEALINGS IN THE SOFTWARE.
 static int readProcNetDevFile(char** output, int32_t* size);
 
 /**
+   This will parse the /proc/net/dev file and build the IFStats_t
+   linked list. 
 
+   @return A linked list of IFStats_t objects, or NULL on error
+   @note errno will be set when returning NULL
 */
 IFStats_t* getIfStats(){
 
