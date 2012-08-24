@@ -26,6 +26,10 @@ man getIfStats
 man releaseStats
 ```
 
+## Testing
+The library was tested on Ubuntu 12.04 and Fedora 17. It was also run through Valgrind
+and no memory leaks or errors were reported. 
+
 ## License
 This software is avilable under the MIT License.
 
