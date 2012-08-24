@@ -76,6 +76,9 @@ functions.
 .nf
 .sp
 #include <stdio.h>
+#include <stdlib.h>
+#include <errno.h>
+#include <string.h>
 #include <ifstats.h>
 
 int main(int argc, char* argv[]){
@@ -106,6 +109,7 @@ int main(int argc, char* argv[]){
    }
 
    releaseStats(stats);  
+   return EXIT_SUCCESS;
 }
 .fi
 .PP
