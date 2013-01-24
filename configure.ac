@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.68])
-AC_INIT([ifstats], [1.0.0], [j.m.slocum@gmail.com])
+AC_INIT([ifstats], [1.0.4], [j.m.slocum@gmail.com])
 AC_CONFIG_MACRO_DIR([m4])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 LT_INIT
