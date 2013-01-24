@@ -6,12 +6,28 @@ network stats reported by the kernel for all devices on the system and build
 a linked list of data structures. 
 
 ## Installation
-To install libifstats on your system just clone the git repo, and run make
+To install libifstats on your system just clone the git repo, and run the 
+gnu autoreconf program on the project. This will generate the configure
+scripts. Then you install it like any other program.
 
 ```bash
 git clone git://github.com/jmslocum/ifstats.git
 cd ifstats
+autoreconf --install
+./configure
 make
+sudo make install
+make clean
+```
+
+Installing from a dist tarball is simpler and does not require the libtools suite to
+be install. you can just unpack the tar.gz file and do the "usual" install.
+
+```bash
+tar -zxvf ifstats-1.0.0.tar.gz
+cd ifstats-1.0.0
+./configure
+make 
 sudo make install
 make clean
 ```
